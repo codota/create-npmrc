@@ -1,6 +1,5 @@
 FROM docker:19.03.2
-LABEL "repository"="https://github.com/ferluisxd/create-npmrc"
-LABEL "maintainer"="Luis Vilca"
+LABEL "repository"="https://github.com/codota/create-npmrc"
 
 RUN apk update \
   && apk upgrade \

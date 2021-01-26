@@ -4,11 +4,8 @@ branding:
   color: 'green'
   icon: 'box'
 inputs:
-  org_name:
-    description: 'Github repository name'
-    required: true
   auth_token:
-    description: 'AuthToken for github'
+    description: 'AuthToken for JFrog Artifactory'
     required: false
 runs:
   using: 'docker'

@@ -1,7 +1,7 @@
 #!/bin/sh -l
-echo "registry = https://npm.pkg.github.com/$INPUT_ORG_NAME" > .npmrc
+echo "@codota:registry=https://codota.jfrog.io/artifactory/api/npm/codota-npm/" > .npmrc
 if [[ -z "$INPUT_AUTH_TOKEN" ]]; then
-    echo "//npm.pkg.github.com/:_authToken=$AUTH_TOKEN" >> .npmrc
+    echo "//codota.jfrog.io/artifactory/api/npm/codota-npm/:_authToken=$AUTH_TOKEN" >> .npmrc
 else
-    echo "//npm.pkg.github.com/:_authToken=$INPUT_AUTH_TOKEN" >> .npmrc
+    echo "//codota.jfrog.io/artifactory/api/npm/codota-npm/:_authToken=$INPUT_AUTH_TOKEN" >> .npmrc
 fi
